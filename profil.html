@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Wisata | Kali Kebo Camping Ground</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            padding: 18px;
+            background: #f5f8f7;
+            border: 1px solid #dce5e8;
+            border-left: 4px solid #168b83;
+            border-radius: 9px;
+        }
+
+        .info-box h3 {
+            margin: 0 0 8px;
+            font-size: 16px;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        .tabel-harga {
+            width: 100%;
+            overflow-x: auto;
+            border: 1px solid #dce5e8;
+            border-radius: 10px;
+            margin: 18px 0;
+        }
+
+        .tabel-harga table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            font-size: 13px;
+        }
+
+        .tabel-harga th {
+            background: #17324d;
+            color: white;
+            padding: 13px 10px;
+            text-align: left;
+        }
+
+        .tabel-harga td {
+            padding: 12px 10px;
+            border-top: 1px solid #dce5e8;
+        }
+
+        .tabel-harga tr:nth-child(even) {
+            background: #edf6f4;
+        }
+
+        .tabel-harga td:last-child {
+            color: #168b83;
+            font-weight: 700;
+        }
+
+        .catatan-harga {
+            padding: 12px;
+            background: #fff8e8;
+            border-left: 4px solid #d7a64b;
+            border-radius: 6px;
+            font-size: 12px;
+        }
+
+        .label-section {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #e4f4f0;
+            color: #168b83;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        /* FORM PEMESANAN */
+
+        .form-pesan {
+            background: #f5f8f7;
+            padding: 22px;
+            border-radius: 12px;
+            border: 1px solid #dce5e8;
+            margin: 20px 0;
+        }
+
+        .form-pesan label {
+            display: block;
+            margin: 12px 0 6px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .form-pesan input,
+        .form-pesan select,
+        .form-pesan textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        .form-pesan textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .total-harga {
+            background: #e4f4f0;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #168b83;
+            border-radius: 7px;
+        }
+
+        .total-harga h2 {
+            color: #168b83;
+            margin: 8px 0 0;
+        }
+
+        .form-pesan button {
+            width: 100%;
+            padding: 14px;
+            background: #168b83;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .form-pesan button:hover {
+            background: #116d67;
+        }
+
+        @media (max-width: 450px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>KALI KEBO CAMPING GROUND</h1>
+    <p>Pesona Alam Pronojiwo, Lumajang, Jawa Timur</p>
+</header>
+
+<div class="container">
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="profil.html">Profil Wisata</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="lokasi.html">Lokasi</a>
+        <a href="ulasan.html">Ulasan</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="buku_tamu.html">Buku Tamu</a>
+    </nav>
+
+    <main>
+
+        <span class="label-section">DESTINASI WISATA ALAM</span>
+
+        <h2>Profil Wisata</h2>
+
+        <p>
+            Selamat datang di <strong>Kali Kebo Camping Ground</strong>,
+            destinasi wisata alam yang berada di kawasan
+            Pronojiwo, Kabupaten Lumajang, Jawa Timur.
+            Tempat ini dapat menjadi pilihan untuk menikmati
+            suasana alam terbuka dan menghabiskan waktu
+            bersama teman maupun keluarga.
+        </p>
+
+        <p>
+            Dengan suasana alam yang asri dan panorama
+            pegunungan, pengunjung dapat menikmati kegiatan
+            berkemah, bersantai, berfoto, serta merasakan
+            pengalaman berwisata di alam terbuka.
+        </p>
+
+        <div class="info-grid">
+
+            <div class="info-box">
+                <h3>🌿 Daya Tarik</h3>
+                <p>
+                    Suasana alam, pemandangan hijau,
+                    dan pengalaman berkemah.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3>🏕️ Aktivitas</h3>
+                <p>
+                    Camping, fotografi, bersantai,
+                    dan berkumpul bersama keluarga.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3>📍 Lokasi</h3>
+                <p>
+                    Kawasan Pronojiwo,
+                    Kabupaten Lumajang, Jawa Timur.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3>💚 Wisata Alam</h3>
+                <p>
+                    Nikmati alam dengan tetap menjaga
+                    kebersihan dan kelestarian lingkungan.
+                </p>
+            </div>
+
+        </div>
+
+        <h2>Harga Tiket dan Paket Camping</h2>
+
+        <p>
+            Berikut referensi harga tiket dan layanan
+            camping yang dapat digunakan sebagai gambaran
+            biaya kunjungan.
+        </p>
+
+        <div class="tabel-harga">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jenis Layanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Tiket masuk area wisata</td>
+                        <td>Gratis*</td>
+                    </tr>
+
+                    <tr>
+                        <td>Camping Tenda Biasa</td>
+                        <td>Rp50.000/tenda*</td>
+                    </tr>
+
+                    <tr>
+                        <td>Village Glamp</td>
+                        <td>Rp250.000/pax*</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sewa Perlengkapan Tenda dome</td>
+                        <td>Rp50.000-Rp100.000*</td>
+                    </tr>
+
+                    <tr>
+                        <td>Petugas Jaga Malam</td>
+                        <td>Rp75.000-Rp100.000*</td>
+                    </tr>
+
+                    <tr>
+                        <td>Biaya Listrik (Isi Daya)</td>
+                        <td>Rp3.000*</td>
+                    </tr>
+
+                    <tr>
+                        <td>Parkir motor</td>
+                        <td>Rp5.000*</td>
+                    </tr>
+
+                    <tr>
+                        <td>Parkir mobil</td>
+                        <td>Rp10.000*</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <p class="catatan-harga">
+            <strong>Catatan:</strong> Harga di atas merupakan
+            referensi dari publikasi yang tersedia dan belum
+            dikonfirmasi sebagai tarif resmi terbaru.
+            Harga, fasilitas, serta ketentuan dapat berubah.
+            Hubungi pengelola sebelum berkunjung.
+        </p>
+
+        <!-- FORM PEMESANAN TIKET -->
+
+        <h2>Pesan Tiket dan Paket Camping</h2>
+
+        <p>
+            Silakan isi formulir berikut untuk melakukan
+            pemesanan tiket dan paket camping Kali Kebo
+            Camping Ground.
+        </p>
+
+        <div class="form-pesan">
+
+            <form id="formPesan">
+
+                <label for="nama">Nama Lengkap</label>
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                >
+
+                <label for="wa">Nomor WhatsApp</label>
+                <input
+                    type="tel"
+                    id="wa"
+                    placeholder="Contoh: 08123456789"
+                    required
+                >
+
+                <label for="tanggal">Tanggal Kunjungan</label>
+                <input
+                    type="date"
+                    id="tanggal"
+                    required
+                >
+
+                <label for="paket">Jenis Paket</label>
+                <select id="paket" required>
+                    <option value="">-- Pilih Paket --</option>
+                    <option value="50000">Camping Per Tenda - Rp50.000</option>
+                    <option value="250000">Village Glamp - Rp250.000</option>
+                </select>
+
+                <label for="jumlah">Jumlah Orang / Unit</label>
+                <input
+                    type="number"
+                    id="jumlah"
+                    min="1"
+                    value="1"
+                    required
+                >
+
+                <label for="catatan">Catatan Tambahan</label>
+                <textarea
+                    id="catatan"
+                    placeholder="Tuliskan permintaan tambahan..."
+                ></textarea>
+
+                <div class="total-harga">
+                    Total Harga:
+                    <h2 id="total">Rp0</h2>
+                </div>
+
+                <button type="submit">
+                    📩 Pesan Sekarang via WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- TIPS BERKUNJUNG -->
+
+        <h2>Tips Sebelum Berkunjung</h2>
+
+        <div class="info-box">
+            <p>✓ Periksa kondisi cuaca sebelum berangkat.</p>
+            <p>✓ Siapkan perlengkapan camping yang diperlukan.</p>
+            <p>✓ Konfirmasi harga dan ketersediaan tempat.</p>
+            <p>✓ Bawa kembali sampah dan jaga kebersihan alam.</p>
+            <p>✓ Patuhi arahan pengelola demi keselamatan.</p>
+        </div>
+
+    </main>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Website Wisata Kali Kebo Camping Ground</p>
+    <p>Pronojiwo, Lumajang, Jawa Timur</p>
+</footer>
+
+<!-- JAVASCRIPT PEMESANAN -->
+
+<script>
+
+    const paket = document.getElementById("paket");
+    const jumlah = document.getElementById("jumlah");
+    const total = document.getElementById("total");
+
+    function hitungTotal() {
+
+        let harga = Number(paket.value);
+        let banyak = Number(jumlah.value);
+
+        let hasil = harga * banyak;
+
+        total.innerText = "Rp" + hasil.toLocaleString("id-ID");
+
+    }
+
+    paket.addEventListener("change", hitungTotal);
+    jumlah.addEventListener("input", hitungTotal);
+
+    document.getElementById("formPesan")
+    .addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        let nama = document.getElementById("nama").value;
+        let wa = document.getElementById("wa").value;
+        let tanggal = document.getElementById("tanggal").value;
+        let pilihan = paket.options[paket.selectedIndex].text;
+        let banyak = jumlah.value;
+        let catatan = document.getElementById("catatan").value;
+
+        if (!paket.value) {
+            alert("Silakan pilih paket terlebih dahulu!");
+            return;
+        }
+
+        let hargaTotal = Number(paket.value) * Number(banyak);
+
+        let pesan =
+            "Halo, saya ingin memesan tiket Kali Kebo Camping Ground.\n\n" +
+            "DATA PEMESANAN\n" +
+            "Nama: " + nama + "\n" +
+            "Nomor WhatsApp: " + wa + "\n" +
+            "Tanggal Kunjungan: " + tanggal + "\n" +
+            "Paket: " + pilihan + "\n" +
+            "Jumlah: " + banyak + "\n" +
+            "Total Harga: Rp" + hargaTotal.toLocaleString("id-ID") + "\n" +
+            "Catatan: " + catatan;
+
+        // GANTI DENGAN NOMOR WHATSAPP PENGELOLA
+        let nomorAdmin = "085229548109";
+
+        let url = "https://wa.me/" + nomorAdmin +
+                  "?text=" + encodeURIComponent(pesan);
+
+        window.open(url, "_blank");
+
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu - Wisata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Buku Tamu Wisata</h1>
+    <p>Bagikan pengalaman dan kesanmu bersama kami</p>
+</header>
+
+<div class="container">
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="profil.html">Profil</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="lokasi.html">Lokasi</a>
+        <a href="ulasan.html">Ulasan</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="buku_tamu.html">Buku Tamu</a>
+    </nav>
+
+    <main>
+        <h2>Formulir Buku Tamu</h2>
+        <p>
+            Silakan isi formulir berikut untuk memberikan
+            informasi dan pengalaman kunjunganmu.
+        </p>
+
+        <form id="formBukuTamu">
+
+            <!-- INPUT TEXT -->
+            <label for="nama">Nama Lengkap</label>
+            <input
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Masukkan nama lengkap"
+                required
+            >
+
+            <!-- INPUT EMAIL -->
+            <label for="email">Alamat Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="contoh@email.com"
+                required
+            >
+
+            <!-- RADIO BUTTON: PILIH SATU -->
+            <label>Jenis Pengunjung</label>
+
+            <div class="pilihan-form">
+                <label>
+                    <input type="radio" name="pengunjung"
+                           value="Pelajar" required>
+                    Pelajar
+                </label>
+
+                <label>
+                    <input type="radio" name="pengunjung"
+                           value="Umum">
+                    Umum
+                </label>
+
+                <label>
+                    <input type="radio" name="pengunjung"
+                           value="Keluarga">
+                    Keluarga
+                </label>
+            </div>
+
+            <!-- SELECT / DROPDOWN -->
+            <label for="wisata">Dari Mana Kamu Mengetahui Wisata Ini?</label>
+
+            <select id="wisata" name="wisata" required>
+                <option value="">-- Pilih sumber informasi --</option>
+                <option value="Media Sosial">Media Sosial</option>
+                <option value="Teman">Teman</option>
+                <option value="Keluarga">Keluarga</option>
+                <option value="Internet">Internet</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+
+            <!-- CHECKBOX: BOLEH PILIH LEBIH DARI SATU -->
+            <label>Apa yang Kamu Sukai?</label>
+
+            <div class="pilihan-form">
+                <label>
+                    <input type="checkbox" name="kesukaan"
+                           value="Pemandangan">
+                    Pemandangan
+                </label>
+
+                <label>
+                    <input type="checkbox" name="kesukaan"
+                           value="Fasilitas">
+                    Fasilitas
+                </label>
+
+                <label>
+                    <input type="checkbox" name="kesukaan"
+                           value="Kuliner">
+                    Kuliner
+                </label>
+
+                <label>
+                    <input type="checkbox" name="kesukaan"
+                           value="Spot Foto">
+                    Spot Foto
+                </label>
+            </div>
+
+            <!-- TEXTAREA: TEKS PANJANG -->
+            <label for="pesan">Pesan dan Kesan</label>
+
+            <textarea
+                id="pesan"
+                name="pesan"
+                rows="5"
+                placeholder="Ceritakan pengalamanmu selama berkunjung..."
+                required
+            ></textarea>
+
+            <!-- BUTTON KIRIM DAN RESET -->
+            <div class="tombol-form">
+                <button type="submit">Kirim Buku Tamu</button>
+                <button type="reset" class="btn-reset">
+                    Reset
+                </button>
+            </div>
+
+        </form>
+
+        <p id="hasil" aria-live="polite"></p>
+
+    </main>
+</div>
+
+<footer>
+    <p>&copy;  2026 Website Wisata Kali Kebo Camping Ground
+<br>Pronojiwo, Lumajang, Jawa Timur</p>
+</footer>
+
+<script>
+document.getElementById("formBukuTamu")
+.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+
+    document.getElementById("hasil").textContent =
+        "Terima kasih, " + nama +
+        "! Formulir berhasil diperiksa.";
+
+    this.reset();
+});
+</script>
+
+</body>
+</html>

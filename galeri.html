@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Wisata | Kali Kebo Camping Ground</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .intro-galeri {
+            background: #f0f6f4;
+            border: 1px solid #dce8e3;
+            border-left: 5px solid #168b83;
+            border-radius: 9px;
+            padding: 17px;
+            margin-bottom: 25px;
+        }
+
+        .judul-galeri {
+            color: #17324d;
+            font-size: 20px;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #dce5e8;
+        }
+
+        .grid-galeri {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .item-galeri {
+            min-width: 0;
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid #dce5e8;
+            border-radius: 11px;
+            box-shadow: 0 5px 15px rgba(23, 50, 77, 0.08);
+            transition: 0.25s ease;
+        }
+
+        .item-galeri:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 22px rgba(23, 50, 77, 0.14);
+        }
+
+        .item-galeri img {
+            display: block;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            background: #e8efed;
+        }
+
+        .caption-galeri {
+            padding: 11px;
+        }
+
+        .caption-galeri h3 {
+            font-size: 13px;
+            margin: 0 0 4px;
+            color: #17324d;
+        }
+
+        .caption-galeri p {
+            font-size: 11px;
+            margin: 0;
+            color: #7c8a97;
+        }
+
+        .video-card {
+            padding: 12px;
+            border: 1px solid #dce5e8;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(23, 50, 77, 0.08);
+        }
+
+        .video-card video {
+            display: block;
+            width: 100%;
+            max-height: 450px;
+            background: #17324d;
+            border-radius: 8px;
+        }
+
+        .video-info {
+            padding: 12px 4px 3px;
+        }
+
+        .video-info h3 {
+            margin: 0 0 5px;
+            color: #17324d;
+        }
+
+        .video-info p {
+            font-size: 13px;
+            margin: 0;
+        }
+
+        @media (max-width: 900px) {
+            .grid-galeri {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 700px) {
+            .grid-galeri {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .item-galeri img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>GALERI WISATA</h1>
+    <p>Kali Kebo Camping Ground · Lumajang, Jawa Timur</p>
+</header>
+
+<div class="container">
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="profil.html">Profil Wisata</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="lokasi.html">Lokasi</a>
+        <a href="ulasan.html">Ulasan</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="buku_tamu.html">Buku Tamu</a>
+    </nav>
+
+    <main>
+
+        <h2>Galeri Kali Kebo Camping Ground</h2>
+
+        <div class="intro-galeri">
+            <p>
+                Jelajahi keindahan Kali Kebo Camping Ground
+                melalui koleksi foto dan video. Temukan
+                suasana alam, area camping, serta momen
+                menarik di destinasi wisata Lumajang ini.
+            </p>
+        </div>
+
+        <h3 class="judul-galeri">📸 Koleksi Foto Wisata</h3>
+
+        <div class="grid-galeri">
+
+            <div class="item-galeri">
+                <img src="kalkeb1.jpeg"
+                     alt="Pemandangan Kali Kebo"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>01. Suasana Alam</h3>
+                    <p>Menikmati suasana yang asri</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb2.jpeg"
+                     alt="Area camping Kali Kebo"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>02. Area Camping</h3>
+                    <p>Tempat menikmati alam terbuka</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb3.jpeg"
+                     alt="Tenda camping"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>03. Tenda Camping</h3>
+                    <p>Pengalaman berkemah di alam</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb4.jpeg"
+                     alt="Suasana alam"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>04. Cafe Kibo</h3>
+                    <p>Suasana cafe yang nyaman</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb5.jpeg"
+                     alt="Aliran sungai"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>05. Aliran Sungai</h3>
+                    <p>Pesona kawasan sungai</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb7.jpeg"
+                     alt="Panorama pegunungan"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>06. Panorama Pegunungan</h3>
+                    <p>Pemandangan alam sekitar</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb8.jpeg"
+                     alt="Pemandangan hijau"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>07. Lanskap Hijau</h3>
+                    <p>Keindahan lingkungan wisata</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb9.jpeg"
+                     alt="Aktivitas pengunjung"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>08. Aktivitas Pengunjung</h3>
+                    <p>Momen selama berwisata</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb10.jpeg"
+                     alt="Suasana berkemah"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>09. Suasana Berkemah</h3>
+                    <p>Menikmati waktu bersama</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb11.jpeg"
+                     alt="Pemandangan sekitar camping ground"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>10. Sudut Wisata</h3>
+                    <p>Pesona dari sudut berbeda</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb12.jpeg"
+                     alt="Keindahan alam Kali Kebo"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>11. Pesona Alam</h3>
+                    <p>Keindahan alam Kali Kebo</p>
+                </div>
+            </div>
+
+            <div class="item-galeri">
+                <img src="kalkeb13.jpeg"
+                     alt="Dokumentasi wisata"
+                     loading="lazy">
+                <div class="caption-galeri">
+                    <h3>12. Kenangan Wisata</h3>
+                    <p>Dokumentasi perjalanan</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 class="judul-galeri">🎬 Video Wisata</h3>
+
+        <div class="video-card">
+            <video controls preload="metadata"
+                   poster="images/foto1.jpg">
+                <source src="vidkalkeb.mp4"
+                        type="video/mp4">
+                Browser kamu tidak mendukung pemutaran video.
+            </video>
+
+            <div class="video-info">
+                <h3>Video Kali Kebo Camping Ground</h3>
+                <p>
+                    Saksikan suasana dan keindahan wisata
+                    melalui dokumentasi video.
+                </p>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2026 Website Wisata Kali Kebo Camping Ground</p>
+    <p>Pronojiwo, Lumajang, Jawa Timur</p>
+</footer>
+
+</body>
+</html>
